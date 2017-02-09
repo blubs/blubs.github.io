@@ -1,0 +1,317 @@
+@keyframes slideUp
+{
+	0%
+	{
+		padding-top: 100%;
+	}
+	50%
+	{
+		padding-top: 100%;
+	}
+	100%
+	{
+		padding-top: 0%;
+	}
+}
+
+line.rootLine
+{
+	stroke-width: 2;
+}
+
+line.selected
+{
+	stroke-width: 4;
+	stroke-linecap: butt;
+	shape-rendering: crispEdges;
+	stroke: #ff8200;
+}
+
+line.subLine
+{
+	fill: none;
+	stroke-width: 2;
+	/*shape-rendering: crispEdges;*/
+	stroke: #f27b00;
+	opacity: 0.5;
+}
+
+
+text
+{
+	font-family:sans-serif;
+	font-size: 20;
+	fill: none;
+	stroke-width: 1;
+	fill: #f27b00;
+	/*Removed*/
+	/*text-shadow: 1px 0px 1px #923b00;*/
+}
+
+
+rect.selected
+{
+	stroke-width: 20;
+	fill: #bb5f00;
+	stroke: #bb5f00;
+}
+
+
+rect.subNode
+{
+	fill: #f27b00;
+	stroke-width: 10;
+	stroke: #f27b00;
+}
+rect.subNode:hover, text.clickable:hover
+{
+	opacity: 0.5;
+	fill: #a25200;
+	stroke: #a25200;
+}
+
+text.clickable, rect.subNode
+{
+	transition-property: all;
+	transition-duration: 0.2s;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.2s;
+}
+
+svg
+{
+	left: 0;
+	/* Transparent Background */
+	/*background: #353434;*/
+	display: block;
+	/*position: fixed;*/
+	/*width: device-width;*/
+	width: 100%;
+	/*margin auto;*/	
+	/*width:100%;*/
+	/*width: 70em;*/
+	/*width: device-width;*/
+	/* Use background color to debug area */
+	/*background-color: #00660033;*/
+	
+	/* Moved to rect */
+	/*padding-top: 6%;*/
+	min-height:300px;
+	/*max-height:100%;*/
+	/*origin:*/ 
+}
+
+svg.nonSolid
+{
+	/*margin: 0 auto;
+	margin: auto 0;*/
+	/*margin: auto;*/
+	/* Make the outline stay in the same relative position */
+	/*position: absolute;*/
+	/* Make the outline scroll with the page */
+	/*position: fixed;*/
+}
+
+rect.svgWrapper
+{
+	/* Use Background color to debug area */
+	/*background-color: #88000022;*/
+	/*width: 100%;
+	height: 100%;*/
+	/*padding-top: 4%;*/
+	padding-top: 4vw;
+	margin: auto;
+	width: 100%;
+	
+	/*Looked nice, but mobile browser scaling does not allow me to do this nicely*/
+	/*position: fixed;*/
+	position: absolute;
+	z-index: 0;
+}
+
+div.slideUp
+{
+	/*animation-timing-function: cubic-bezier(0.1,0.1,0.1,0.1); */
+	animation-name: slideUp;
+	animation-duration: 1.2s;
+	/*padding-top: 6%;*/
+	/*width: 100%;*/
+}
+html
+{
+}
+body
+{
+	/*padding-top: 6em;*/
+	/*padding-left: 0em;*/
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-seriff;
+	color:#f27b00;
+	background-color: #353434;
+	/*height: 100%;*/
+}
+
+h1
+{
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-seriff;
+}
+
+
+a:link
+{
+
+	color: hsl(0,0%,100%);
+	color: #ff9b30;
+}
+a:visited
+{
+	color: grey;
+	color: grey;
+}
+
+a:hover
+{
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.2s;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-
+	color: hsl(0,0%,20%);
+}
+
+ul.a
+{
+	list-style-type:none;
+}
+ul.b
+{
+	list-style-type:square;
+}
+
+li.n
+{
+	margin-top: 0.2vw;
+}
+
+
+div.subContentOffset
+{
+	/*padding-left: 15.5em;*/
+	/*padding-left: 19%;*/
+	/*margin-left: 19%; */
+	margin-left: 22vw;
+	text-align: left;
+	position: relative;
+	z-index: 1;
+}
+
+div.subContent
+{
+	white-space: wrap;
+	width: 63.5vw;
+	/*width: 64%;*/
+	/*width: 100%;*/
+	font-size: 1.3vw;
+	/*min-height: 100%;*/
+	/*margin-bottom: -120px;*/
+}
+
+div.subContent:after
+{
+	/*Left justify for IE*/
+	/*content: "";*/
+	/*display: block;*/
+}
+
+div.footer
+{
+	width: device-width;
+	height: 10%;
+	/*background-color: #ff0000;*/
+	background-color: #353434;
+	/*font-style: italic;*/
+	font-style: normal;
+	font-size: 0.8vw; 
+	letter-spacing: 1px; font-family:sans-serif; text-align: center;
+	border-top: thin solid;
+	z-index: 2;
+
+}
+address, div.subContent:after
+{
+	height: 100px;
+}
+
+*
+{
+	margin: 0;
+}
+
+br.half
+{
+	line-height: 0.5em;
+}
+
+hr
+{
+	color: #ff8200;
+	background-color: #ff8200;
+	border-width: 0;
+	color: #ff8200;
+	background-color: #ff8200;
+	height: 1px;
+}
+
+hr.contentHR
+{
+	text-align: left;
+	border-width: 0;
+	/*width: 87%;*/
+	width: 49em;
+	color: #ff8200;
+	background-color: #ff8200;
+	height: 1px;
+}
+
+
+div.thirdColumn
+{
+	float: left;
+	margin: 0;
+	width: 21vw;
+}
+div.columnGap
+{
+	float: left;
+	margin: 0;
+	width: 4.2vw;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+}
+div.threeColumns
+{
+	margin: 0 auto;
+	margin-left: -4vw;
+	margin-top: -2vw;
+	width: 72vw;
+}
+
+img.subProj
+{
+	max-width: 21vw;
+	max-height: 9vw;
+	width: auto;
+	margin: auto auto;
+	display: block;
+}
+
+img.contactIcon
+{
+	max-width: 5vw;
+	max-height: 5vw;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	width: 21vw;
+}
+
